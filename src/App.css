@@ -1,5 +1,7 @@
 
-
+.main{
+  background-color: lightblue;
+}
 /* Navbar */
 
 .navbar {
@@ -118,6 +120,9 @@
 
 .custom-table .ant-table-thead {
   background-color: black; /* change this to your desired color */
+}
+.projectslist{
+  margin-top: 10px;
 }
 
 @media (max-width: 767px) {
