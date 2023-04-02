@@ -1,6 +1,6 @@
 
 .main{
-  background-color: lightblue;
+  background-color: rgb(110, 183, 207);
 }
 /* Navbar */
 
@@ -21,7 +21,7 @@
     gap: 10px;
 }
 .nav-header {
-  background-color: blue;
+  background-color: rgb(8, 123, 161);
   color: white;
   border-bottom: 0;
   padding: 0 4px 0 24px;
@@ -73,7 +73,7 @@
   margin-right: 10px;
 }
 .menuItem{
-  background-color: blue;
+  background-color: rgb(8, 123, 161);
   color: whitesmoke;
 }
 .menuItem a{
@@ -107,22 +107,8 @@
   display: none;
   margin-left: 8px;
 }
-.table-wrapper {
-  margin-top: 10px;
-  border: 1px solid #ddd;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.table-wrapper:hover {
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-
-.custom-table .ant-table-thead {
-  background-color: black; /* change this to your desired color */
-}
-.projectslist{
-  margin-top: 10px;
+.buttonText{
+  color: whitesmoke;
 }
 
 @media (max-width: 767px) {
@@ -150,3 +136,34 @@
 }
 
 /* Navbar End */
+
+/*Table Start*/
+.table-wrapper {
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.table-wrapper:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/*Table End*/
+
+
+/*Footer Start*/
+
+.footer{
+  background-color:rgb(8, 123, 161) ;
+  color: whitesmoke;
+}
+/*Footer End*/
+
+
+
+/*Project Start*/
+.projectslist{
+  margin-top: 10px;
+}
+/*Footer End*/
+
