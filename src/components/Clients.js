@@ -4,6 +4,7 @@ import Spinner from './Spinner';
 import AddClientModal from './AddClientModal';
 import { GET_CLIENTS } from '../queries/ClientQueries';
 import ClientRow from './ClientRow';
+
 const columns = [
     {
         title: 'Name',
@@ -43,7 +44,7 @@ export default function Clients() {
         <>
             <AddClientModal />
             {!loading && !error && (
-                <div className="table-wrapper">
+                <div className="table-wrapper custom-table">
 
                     <Table columns={columns}
                         loading={loading}
