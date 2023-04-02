@@ -1,6 +1,7 @@
 import { useQuery } from '@apollo/client';
 import { Table } from 'antd';
 import { gql } from "@apollo/client";
+import Spinner from './Spinner';
 const columns = [
     {
         title: 'Name',
@@ -36,7 +37,7 @@ query getClients{
 export default function Clients() {
     const { loading, error, data } = useQuery(GET_CLIENTS);
 
-    if (loading) return <h3>Loading...</h3>;
+    if (loading) return <Spinner />;
     if (error) return <p>Something Went Wrong</p>;
 
     const clients = data.clients.map((client) => ({
