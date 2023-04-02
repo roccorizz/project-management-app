@@ -17,11 +17,11 @@
     gap: 10px;
 }
 .nav-header {
-  background-color: white;
+  background-color: blue;
+  color: white;
   border-bottom: 0;
   padding: 0 4px 0 24px;
 }
-
 .logo {
   width: 200px;
   float: left;
@@ -29,6 +29,7 @@
 }
 
 .logo a {
+  color: white;
   display: inline-block;
   font-size: 20px;
   text-transform: capitalize;
@@ -66,6 +67,18 @@
   display: none;
   background: none;
   margin-right: 10px;
+}
+.menuItem{
+  background-color: blue;
+  color: whitesmoke;
+}
+.menuItem a{
+  color: white;
+  
+}
+
+.menuItem:hover {
+  border-bottom: 0;
 }
 
 .ant-drawer-body {

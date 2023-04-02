@@ -4,10 +4,12 @@ import { Menu } from "antd";
 const LeftMenu = ({ mode }) => {
     return (
         <Menu mode={mode}>
-            <Menu.Item key="explore">Explore</Menu.Item>
-            <Menu.Item key="features">Features</Menu.Item>
-            <Menu.Item key="about">About Us</Menu.Item>
-            <Menu.Item key="contact">Contact Us</Menu.Item>
+            <Menu.Item key="feature" className="menuItem">
+                <a href="/">Features</a>
+            </Menu.Item>
+
+            <Menu.Item key="about" className="menuItem">About Us</Menu.Item>
+            <Menu.Item key="contact" className="menuItem">Contact Us</Menu.Item>
         </Menu>
     );
 };

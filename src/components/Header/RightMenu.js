@@ -7,6 +7,7 @@ const RightMenu = ({ mode }) => {
         <Menu mode={mode}>
             <Menu.SubMenu
                 key="user-menu"
+                className="menuItem"
                 title={
                     <>
                         <Avatar icon={<UserOutlined />} />
@@ -14,13 +15,13 @@ const RightMenu = ({ mode }) => {
                     </>
                 }
             >
-                <Menu.Item key="project" icon={<CodeOutlined />}>
+                <Menu.Item key="project" className="menuItem" icon={<CodeOutlined />}>
                     Projects
                 </Menu.Item>
-                <Menu.Item key="about-us" icon={<UserOutlined />}>
+                <Menu.Item key="about-us" className="menuItem" icon={<UserOutlined />}>
                     Profile
                 </Menu.Item>
-                <Menu.Item key="log-out" icon={<LogoutOutlined />}>
+                <Menu.Item key="log-out" className="menuItem" icon={<LogoutOutlined />}>
                     Logout
                 </Menu.Item>
             </Menu.SubMenu>

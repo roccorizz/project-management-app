@@ -25,7 +25,6 @@ const Header = () => {
                 <Layout.Header className="nav-header">
                     <div className="logo">
                         <img src={logo} className="brand-font" alt="logo" />
-                        <span style={{ alignContent: "center" }}>Project Management</span>
                     </div>
                     <div className="navbar-menu">
                         <div className="leftMenu">
