@@ -7,16 +7,15 @@ import { Form, Input, Select, Button, message } from "antd";
 const { Option } = Select;
 
 export default function EditProjectForm({ project }) {
-    const id = project?.id;
     const [form] = Form.useForm();
     const [updateProject, { loading }] = useMutation(UPDATE_PROJECT, {
-        refetchQueries: [{ query: GET_PROJECT, variables: { id: project?.id } }],
+        refetchQueries: [{ query: GET_PROJECT, variables: { id: project.id } }],
         onCompleted: () => {
             setSubmitted(true);
             message.success("Project updated successfully");
         },
         onError: (error) => {
-            console.log(error);
+            console.log(error, 'error');
             message.error("Error updating project");
         },
     });
@@ -46,18 +45,18 @@ export default function EditProjectForm({ project }) {
     };
 
     return (
-        <div style={{ marginTop: '20px' }}>
+        <div style={{ marginTop: '20px', padding: '5px 60px' }}>
             <h3>Update Project Details</h3>
             <Form
                 form={form}
                 onFinish={onSubmit}
                 initialValues={{
-                    name: project?.name,
-                    description: project?.description,
+                    name: project.name,
+                    description: project.description,
                     status:
-                        project?.status === "Not Started"
+                        project.status === "Not Started"
                             ? "new"
-                            : project?.status === "In Progress"
+                            : project.status === "In Progress"
                                 ? "progress"
                                 : "completed"
 

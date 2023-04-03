@@ -102,10 +102,11 @@ export default function AddProjectModal() {
                     <Form.Item
                         label='Client'
                         name='clientId'
+                        initialValue='Select Client'
                         rules={[{ required: true, message: 'Please select a client' }]}
                     >
                         <Select>
-                            <Option value=''>Select Client</Option>
+
                             {data.clients.map((client) => (
                                 <Option key={client.id} value={client.id}>
                                     {client.name}

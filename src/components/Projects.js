@@ -4,7 +4,7 @@ import ProjectCard from './ProjectCard';
 import { GET_PROJECTS } from '../queries/ProjectQueries';
 import AddProjectModal from './AddProjectModal';
 import { Link } from 'react-router-dom';
-import AllProjects from '../pages/AllProjects';
+
 
 export default function Projects() {
     const limit = 3;
@@ -23,7 +23,7 @@ export default function Projects() {
                         <ProjectCard key={project.id} project={project} />
                     ))}
                     {data.projects.length > limit && (
-                        <Link to="/allprojects">
+                        <Link to="/projects">
                             <button>See More</button>
                         </Link>
                     )}

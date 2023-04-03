@@ -4,8 +4,8 @@ import Main from '../../Layout/Main';
 
 import AllProjects from '../../pages/AllProjects';
 import Home from '../../pages/Home';
-import ProjectCard from '../../components/ProjectCard';
-import EditProjectForm from '../../components/EditProjectForm';
+import Project from '../../pages/Project';
+
 
 
 
@@ -21,14 +21,12 @@ const router = createBrowserRouter([
             },
 
             {
-                path: '/allprojects',
-                element: <AllProjects />
-            },
-
-            {
                 path: '/projects/:id',
-                element: <EditProjectForm />,
-                loader: ({ params }) => fetch(`http://localhost:3003/projects/${params.id}`)
+                element: <Project />,
+            },
+            {
+                path: '/projects',
+                element: <AllProjects />,
             },
 
         ]
