@@ -19,18 +19,22 @@ export default function Projects() {
 
             {data.projects.length > 0 ? (
                 <div className='projectslist'>
+
                     {data.projects.slice(0, limit).map((project) => (
                         <ProjectCard key={project.id} project={project} />
                     ))}
-                    {data.projects.length > limit && (
-                        <Link to="/projects">
-                            <button>See More</button>
-                        </Link>
-                    )}
                 </div>
+
             ) : (
                 <p>No Projects</p>
             )}
+            <div className='see-more'>
+                {data.projects.length > limit && (
+                    <Link to="/projects">
+                        <button className='seemore_btn'>See More</button>
+                    </Link>
+                )}
+            </div>
         </>
     );
 }

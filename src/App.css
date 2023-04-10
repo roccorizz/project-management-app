@@ -161,9 +161,49 @@
 
 
 
-/*Project Start*/
 .projectslist{
   margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-/*Footer End*/
 
+.card{
+  width: calc(50% - 5px);
+  margin-bottom: 10px;
+}
+.see-more{
+  margin-left: 30px;
+  
+}
+.seemore_btn{
+padding: 10px 12px;
+background-color: rgb(255, 38, 0);
+color: whitesmoke;
+border: none;
+border-radius: 20px;
+}
+.seemore_btn:hover{
+  background-color: red;
+ font-weight: bold;
+  }
+
+.ant-btn-primary {
+  background-color: #07277e; /* set background color to dark blue */
+  border:none; /* set border color to dark blue */
+  color: #FFFFFF; /* set text color to white */
+  margin-left: 30px;
+}
+
+.ant-btn-primary:hover,
+.ant-btn-primary:focus {
+  background-color: #0B2032; /* set darker background color when hovered/focused */
+  color: #FFFFFF; /* set text color to white */
+}
+
+/* Override the default hover effect */
+.ant-btn-primary:hover, 
+.ant-btn-primary:hover:not(.ant-btn-background-ghost) {
+  background-color: #0B2032;
+  color: #FFFFFF;
+}

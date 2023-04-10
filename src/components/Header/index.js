@@ -4,6 +4,7 @@ import LeftMenu from "./LeftMenu";
 import RightMenu from "./RightMenu";
 import { MenuOutlined, CloseOutlined } from "@ant-design/icons";
 import logo from '../assets/logo.png'
+import { Link } from "react-router-dom";
 
 const Header = () => {
     const [visible, setVisible] = useState(false);
@@ -24,7 +25,9 @@ const Header = () => {
             <Layout>
                 <Layout.Header className="nav-header">
                     <div className="logo">
-                        <img src={logo} className="brand-font" alt="logo" />
+                        <Link to='/'>
+                            <img src={logo} className="brand-font" alt="logo" />
+                        </Link>
                     </div>
                     <div className="navbar-menu">
                         <div className="leftMenu">
